@@ -11,9 +11,7 @@ public class StudentResultManagement extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
-        // Storage file in current directory
         ResultStorage storage = new ResultStorage("results.txt");
-
         LoginPanel login = new LoginPanel(() -> cardLayout.show(cards, "main"));
         StudentPanel studentPanel = new StudentPanel(storage);
 

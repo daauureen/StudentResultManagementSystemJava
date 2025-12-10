@@ -19,7 +19,6 @@ public class Result {
         this.english = english;
     }
 
-    // getters / setters
     public String getName() { return name; }
     public String getRoll() { return roll; }
     public int getMath() { return math; }
@@ -39,9 +38,8 @@ public class Result {
                 name, roll, total, percent, grade);
     }
 
-    // For file storage (simple CSV-ish line)
     public String toStorageLine() {
-        // escape commas in name if any
+
         String safeName = name.replace(",", " ");
         return String.join(",",
                 safeName,

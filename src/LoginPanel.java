@@ -36,7 +36,6 @@ public class LoginPanel extends JPanel {
         loginBtn.addActionListener(e -> {
             String user = usernameField.getText().trim();
             String pass = new String(passwordField.getPassword());
-            // Простая проверка — в реальном приложении используйте хеши и БД
             if ("admin".equals(user) && "1234".equals(pass)) {
                 listener.onLoginSuccess();
             } else {

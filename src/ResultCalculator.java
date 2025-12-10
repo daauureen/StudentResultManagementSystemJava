@@ -1,8 +1,5 @@
 public class ResultCalculator {
 
-    /**
-     * Заполняет total, percent и grade внутри переданного Result и возвращает его.
-     */
     public static Result calculate(Result r) {
         int math = r.getMath();
         int science = r.getScience();
